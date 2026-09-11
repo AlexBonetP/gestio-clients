@@ -58,10 +58,10 @@ Projecte full-stack modular desenvolupat exclusivament amb tecnologies natives (
 
 ```text
 meu-scraper-modular/
-├── gestio-clients/       # FRONTEND (Estàtic i Natiu)
-│   ├── acces.html        # Finestra única de l'aplicació (SPA: Login + Dashboard)
+├── public/               # FRONTEND (Estàtic i Natiu)
+│   ├── access.html        # Finestra única de l'aplicació (SPA: Login + Dashboard)
 │   ├── 404.html          # Pàgina d'error personalitzada ("Hi estem treballant...")
-│   ├── style.css         # Disseny i estils globals de l'aplicació
+│   ├── access.css         # Disseny i estils globals de l'aplicació
 │   ├── textos.json       # Centralització de literals de la interfície
 │   └── app.js            # Lògica de client, manipulació DOM i Fetch API
 ├── src/                  # BACKEND (Node.js)
