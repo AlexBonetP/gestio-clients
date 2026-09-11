@@ -1,6 +1,6 @@
 # Extractor de Dades Web Automatitzat (Full-Stack Scraper)
 
-Projecte full-stack modular desenvolupat exclusivament amb tecnologies natives (**Vanilla HTML, CSS, JavaScript** i **Node.js**). L'objectiu és automatitzar l'extracció de dades de llocs web amb autenticació i renderització dinàmica al frontend, substituint els processos manuals fets actualment amb *Instant Data Scraper*.
+Projecte full-stack modular desenvolupat exclusivament amb tecnologies natives (**Vanilla HTML, CSS, JavaScript** i **Node.js**). L'objectiu és automatitzar l'extracció de dades de la web de factor amb autenticació i renderització dinàmica al frontend, substituint els processos manuals fets actualment amb *Instant Data Scraper*.
 
 ## 📐 Especificacions d'Arquitectura i Disseny
 
@@ -18,7 +18,7 @@ Projecte full-stack modular desenvolupat exclusivament amb tecnologies natives (
 - Separació de continguts literals mitjançant la càrrega asíncrona de text des d'un fitxer JSON extern.
 
 ### 🎛️ Fase 2: Dashboard, Mapejador i Explorador de Dades
-- **Formulari de Targets:** Interfície per registrar i emmagatzemar les URLs objectiu parametritzades.
+- **Formulari de Targets:** Interfície per registrar i emmagatzemar les URLs objectiu parametritzades.(Es necessari?)
 - **Mapejador de Camps:** Disseny de formularis per a la captura dinàmica de selectors CSS (selector de llista/fila i selectors de columnes de contingut).
 - **Taula Camaleònica i Històric:** Generació de la graella de dades 100% dinàmica mitjançant la DOM API, renderitzant les columnes de forma automàtica segons l'estructura de l'objecte JSON de la base de dades. Inclou un selector per carregar dades de diferents registres emmagatzemats.
 - **Cercador Intel·ligent:** Camp de filtrat de dades a través de paraules o identificadors clau. Mostra un resum del camp coincident amb l'opció de desplegar tota la informació continguda en el registre seleccionat.
@@ -58,7 +58,7 @@ Projecte full-stack modular desenvolupat exclusivament amb tecnologies natives (
 
 ```text
 meu-scraper-modular/
-├── public/               # FRONTEND (Estàtic i Natiu)
+├── gestio-clients/       # FRONTEND (Estàtic i Natiu)
 │   ├── acces.html        # Finestra única de l'aplicació (SPA: Login + Dashboard)
 │   ├── 404.html          # Pàgina d'error personalitzada ("Hi estem treballant...")
 │   ├── style.css         # Disseny i estils globals de l'aplicació
@@ -69,8 +69,8 @@ meu-scraper-modular/
 │   ├── middleware/       # Validació de tokens i control de permisos d'accés
 │   ├── controllers/      # Controladors de rutes (Auth, Targets, Data Explorer)
 │   ├── scraper/          # Scripts d'automatització i gestió de Puppeteer
-│   └── server.js         # Punt d'entrada de l'aplicació Express / HTTP
-├── Dockerfile            # Contenidor per homogeneïtzar l'entorn (Node + Chromium)
+│__ server.js             # Punt d'entrada de l'aplicació Express / HTTP
+├── Dockerfile            # Contenidor per homogeneïtzar l'entorn (Node + Chromium. Per determinar)
 ├── package.json          # Manifest de dependències del servidor
 └── README.md             # Documentació del projecte
 ```
