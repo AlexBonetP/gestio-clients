@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Pàgina no trobada</title>
+    <link rel="stylesheet" href="./css/404.css">
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <img src="imgs/404.webp" alt="Il·lustració 404" class="error-img">   
+        <h2>Pàgina no trobada</h2>
+        <p>La URL que has sol·licitat no existeix o ha estat moguda.</p>
+
+        <form class="search-box" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Cerca al lloc..." required>
+            <button type="submit">Cerca</button>
+        </form>
+
+        <div class="links">
+            <a href="/" class="btn-primary">Anar a l'inici</a>
+            <a href="javascript:history.back()" class="btn-secondary">Tornar enrere</a>
+        </div>
+
+        <p class="redirect">Redirigint a l'inici en <span id="countdown">10</span> s...</p>
+    </div>
+
+    <script src="./js/404.js"></script>
+</body>
+</html>   
