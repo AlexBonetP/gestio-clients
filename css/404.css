@@ -13,6 +13,12 @@ body {
 
 .container { padding: 40px; max-width: 500px; }
 
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 .error-code {
     font-size: 8rem;
     font-weight: 900;
